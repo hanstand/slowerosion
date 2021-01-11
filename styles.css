@@ -1,0 +1,789 @@
+/* HANNAH STYLES */
+
+.bg-gif {
+  background-image: url("./assets/screen-bound.gif");
+
+  background-attachment: fixed;
+  background-position: center;
+    background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+    /*height: 100vh;*/
+
+	height: 100%;
+}
+
+
+.video-auto {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.viewport-header {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-wrapper {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*bottom: 20%;*/
+  	margin-left: 50%;
+  	left: -50px;
+    opacity: 0;
+    animation: slideUp ease 5s 4s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+@keyframes slideUp {
+	0% {
+		opacity: 0;
+		bottom: 0;
+	}
+	100% {
+		opacity: 1;
+		bottom: 12%;
+	}
+}
+
+.nav-item {
+	font-family: "Poiret One";
+	text-transform: uppercase;
+	letter-spacing: .18em;
+	margin: 10% 25%;
+	font-size: 12px;
+}
+
+.logo { 
+	font-family: "Poiret One";
+	text-transform: uppercase;
+	letter-spacing: .18em;
+	margin-right: 1%;
+	opacity: 0;
+    animation: fadeInAnimation ease 10s 2s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+@keyframes fadeInAnimation { 
+
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+} 
+
+.sub-logo { 
+	font-family: "Poiret One";
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-size: 18px;
+	margin-left: 1%;
+	opacity: 0;
+    animation: fadeInAnimation ease 10s 4s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+
+
+@media screen and (max-width: 768px) {
+
+	.viewport-header {
+		display: block;
+		padding-top: 50%;
+	}
+
+	.video-auto {
+		display: none;
+	}	
+	/*.sub-logo {
+		margin-top: -75vh;
+	}*/
+
+}
+
+
+/* HANNAH WORK STYLES */
+
+.work-header-txt {
+	font-family: "Poiret One";
+	text-transform: uppercase;
+	letter-spacing: .3em;
+	font-size: 18px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 100%;
+	text-align: center;
+}
+
+.work-h {
+	text-align: center;
+}
+
+.title {
+	font-family: avenir;
+	color: white;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 2% 2% 0 2%;
+}
+
+.work-container {
+	width: 30%;
+	position: relative;
+	padding: 0;
+	margin: 1.6%;
+}
+
+.grid-wrapper{
+	width: 100%;
+	height: 100%;
+	max-width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0 6%
+
+}
+
+.overlay {
+  position: absolute;
+  /*bottom: 100%;*/
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  overflow: hidden;
+  width: 100%;
+  height: 8%;
+
+  transition: .4s ease;
+}
+
+.work-container:hover .overlay {
+	/*bottom: 0;*/
+	height: 100%;
+	padding: 0;
+
+
+
+}
+
+.work-header {
+	margin-top: 20px;
+}
+
+.work-logo {
+	font-family: "Poiret One";
+	text-transform: uppercase;
+	letter-spacing: .18em;
+	margin-bottom: 0;
+	font-size: 1.8rem;
+	text-align: center;
+}
+
+.work-sub-logo {
+		font-family: "Poiret One";
+	text-transform: uppercase;
+	letter-spacing: .11em;
+	font-size: 18px;
+	font-size: .9rem;
+	text-align: center;
+}
+
+
+
+.image {
+	width: 100%;
+	display: block;
+}
+
+.overlay-txt {
+	color: white;
+	font-family: avenir;
+	font-size: 12px;
+	padding: 0 2%;
+}
+
+.collaboration-wrapper {
+	padding-top: 10%;
+		line-height: 1.2;
+
+}
+
+.venue-wrapper {
+	padding-top: 6%;
+	line-height:1.2;
+}
+
+.type {
+	padding-top: 2%;
+}
+
+.partner {
+	font-style: italic;
+}
+
+.photog {
+}
+
+.descrip {
+	padding-top: 6%;
+	line-height: 1.2;
+	/*text-align: justify;*/
+}
+
+.thanks {
+	line-height: 1.2;
+}
+
+.support {
+}
+
+.performer {
+	line-height: 1.2;
+
+}
+
+.more {
+	text-transform: uppercase;
+	padding-top: 10%;
+}
+
+.row-body {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.video-wrapper-phantom {
+	padding: 0 4%;
+}
+
+
+.description {
+	font-family: Archivo;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.2;
+	padding: 3% 7% 3% 0;
+	text-align: justify;
+	width: 100%;
+}
+
+.go-back {
+	font-family: Archivo;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+
+.work-p {
+	margin: 0%;
+}
+
+.work-title {
+	font-family: avenir;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.collaboration {
+	padding-top: 3%;
+}
+
+.row-header {
+	display: flex;
+	/*width: 100%;*/
+	align-items: center;
+	justify-content: center;
+}
+
+.arrow {
+	font-size: 25px;
+	line-height: .5;
+	text-align: center;
+}
+.column-header-1 {
+  flex: 25%;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.column-header-2 {
+  flex: 75%;
+
+}
+
+
+.video-phantom {
+	width: 49.2%;
+	padding: 0 4px;
+  	margin-top: 8px;
+}
+
+
+/* PORTFOLIO TEMPLATE STYLES */
+
+@media screen and (max-width: 768px) {
+  .video-phantom {
+    width: 100%;
+    max-width: 100%;
+  }
+  .column-header-1 {
+  	padding-top: 3%;
+   	flex: 100%;
+  	max-width: 100%;
+  }
+  .column-header-2 {
+  	flex: 100%;
+  	max-width: 100%;
+  }
+  .row-header {
+  	display: block;
+  	padding: 0 4% 1% 4%;
+
+  }
+  .description {
+  	padding: 3% 1.5%;
+  }
+  .work-title {
+  	text-align: center;
+  }
+
+}
+
+
+/* Create four equal columns that sits next to each other */
+.row-body {
+	padding: 0 4% 1% 4%;
+}
+.column-body {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column-body img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-body {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+
+.work-container {
+	margin: 2% 10%;
+	width: 80%;
+}
+
+}
+
+@media screen and (min-width: 540px) and (max-width: 900px) {
+
+.grid-wrapper {
+	padding: 2%;
+	margin: 0;
+}
+
+.work-container {
+	width: 45%;
+	margin: 2.3%;
+}
+
+
+}
+
+
+
+/* ABOUT STYLES */
+
+.about-logo {
+	font-family: "Poiret One";
+	text-transform: uppercase;
+	letter-spacing: .18em;
+	margin-bottom: 0;
+	font-size: 2rem;
+	text-align: right;
+}
+
+.about-sub-logo {
+		font-family: "Poiret One";
+	text-transform: uppercase;
+	letter-spacing: .12em;
+	font-size: 18px;
+	font-size: 1rem;
+	text-align: right;
+}
+
+
+.about-wrapper {
+	display: flex;
+}
+
+.nav-item-about {
+	font-family: "Poiret One";
+	text-transform: uppercase;
+	letter-spacing: .18em;
+	margin: 2%;
+	font-size: 14px;
+}
+
+
+.video-about {
+ object-fit: cover;
+
+  height: 100vh;
+ /* position: fixed;*/
+  top: 0;
+  left: 0;
+
+}
+
+.column {
+	font-family: avenir;
+	line-height: 1.3;
+	margin-top: 5%;
+}
+
+.nav-about {
+   /* position: absolute;*/
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*bottom: 20%;*/
+   /* left: 50%;
+    margin-left: -100px;*/
+ }
+
+
+.bio-wrapper {
+	width: 50%;
+	margin: auto;
+	text-align: justify;
+}
+
+.statement {
+	font-size: 14px;
+	padding: 1%;
+	margin-top: 6%;
+}
+
+
+
+/* CONTACT STYLES */
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 768px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .about-wrapper {
+  	padding-top: 8%;
+  }
+  .artist-statement {
+  	padding: 0;
+  }
+  .artist-bio {
+  	padding: 0;
+  }
+}
+
+
+
+.left {
+	float: left;
+	padding-left: 3%;
+	padding-top: 2%;
+}
+.right {
+	float: right;
+	padding-right: 3%;
+	padding-top: 2%;
+
+}
+
+
+.artist-statement {
+	font-family: Archivo;
+	font-size: 15px;
+	line-height: 1.2;
+	text-align: justify;
+	padding: 0 5%;	
+}
+
+.artist-bio {
+	font-family: Archivo;
+	font-size: 15px;
+	line-height: 1.2;
+	text-align: justify;
+	padding: 0 5%;	
+
+}
+
+
+.statement-title {
+	font-family: Avenir;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+.contact-text {
+	font-family: Avenir;
+	font-size: 30px;
+
+}
+
+
+
+.contact-email {
+	font-family: Archivo;
+	font-size: 16px;
+  	padding-top: 0;
+}
+
+
+.contact-email-header {
+	font-family: Archivo;
+	font-size: 16px;
+  	padding-top: 0;
+  	font-weight: bold;
+  	text-transform: uppercase;
+  	
+}
+
+.col-contact-1 {
+	flex: 20%;
+}
+.col-contact-2 {
+	flex: 80%;
+}
+
+.row-contact {
+	display: flex;
+}
+    
+
+
+
+.icon-wrapper {
+	padding-top: 5%;
+	text-align: center;
+	animation: fadeIn ease 6s 5s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+    opacity: 0;
+
+
+}
+
+
+
+.contact-image {
+	width: 70%;
+}
+
+.contact-slide {
+  /*animation-duration: 5s;
+  animation-name: slidein;
+  animation-iteration-count: 1; */
+  font-size: 20px;
+  padding-bottom: 2%;
+
+}
+
+.contact-wrapper {
+	border: solid 1px black;
+	padding: 2%;
+	margin-top: 10%;
+}
+
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+
+
+
+/* MAIN PAGE STYLES */
+
+.bgimg1 {
+	background-image: url("./assets/hand.jpg");
+	height: 700px;
+
+	background-attachment: fixed;
+	background-position: center;
+  	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bgimg2 {
+	background-image: url("./assets/selves.JPG");
+	height: 500px;
+
+	background-attachment: fixed;
+	background-position: center;
+  	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bgimg3 {
+	background-image: url("./assets/sarah.JPG");
+	height: 500px;
+
+
+	background-attachment: fixed;
+	background-position: center;
+  	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+
+.logo-se {
+	letter-spacing: 0.1em;
+	font-family: "Poiret One", avenir;
+	font-size: 45px;
+	padding-left: 10%;
+    padding-top: 10%;
+    
+
+}
+
+.wrapper {
+	background-color: #fafafa;
+	/*padding:50px 80px;*/
+	padding: 50px 15px;
+	text-align: center;
+}
+
+.header {
+	max-width: 600px;
+	margin: auto;
+	font-family: avenir;
+}
+
+
+.txt {
+	font-family: avenir;
+	margin-top: 2%;
+	max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    text-align: justify;
+    font-weight: lighter;
+
+}
+
+.team {
+
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: .2em;
+	margin-top: 25px;
+
+}
+
+.subHeader {
+	font-family: avenir;
+	margin-top: 0.5rem;
+
+}
+
+#teamImg {
+	width: 100%;
+	margin: 25px 0px;
+}
+
+#footer {
+	background-color: #E8E8E8;
+	width: 100%;
+	overflow: auto;
+	text-align: center;
+	padding-bottom: 1rem;
+}
+
+#contact {
+	font-family: avenir;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: .2em;
+	margin-top: 1rem;
+	margin-bottom: 10px;
+}
+
+.social {
+	margin-left: .4em;
+	margin-right: .4em;
+
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	color: #909090;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
